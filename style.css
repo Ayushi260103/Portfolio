@@ -1,0 +1,400 @@
+h1{ 
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 2px 2px 2px #aaa;
+}
+p{
+    font-size: 25px;
+}
+
+
+/*---Navigation---*/
+
+#nav{
+    text-align: left;
+    position: fixed;
+    width: 100%; 
+    z-index: 1;
+}
+.navbar-brand{
+    color: #fff;
+}
+
+/*---Title---*/
+
+ @keyframes animtext { 
+    from {
+        width: 0;
+       transition: all 2s ease-in-out;
+    } 
+  }
+#title h1{
+    margin: 10px 0 10px 0;
+    width: 100%;
+    animation: animtext 4s steps(80, end); 
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Tangerine', serif;
+    font-size: 55px;
+    text-shadow: 2.5px 2px 2px #aaa;
+}
+.word{
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    line-height: 1.5;
+}
+#title{
+    background-image: linear-gradient(45deg,black,rgb(12, 12, 12),rgb(12, 12, 12),black);
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-size: cover;
+    background-position: center;
+    color:white;
+    height:auto;
+    text-align: center;
+    padding: 8% 2% 8%;
+}
+h1 span{
+    color: red;
+}
+.profile{
+    padding: 8% 15% 18%;
+}
+
+/*---About Me---*/
+
+#about-me{
+    background-image: linear-gradient(#6a7383,#8693AB,#BDD4E7);
+    background-size: cover;
+    padding: 8% 8%;
+    color: #000;
+    text-align: center;
+}
+#about-me h1{    
+    font-family: 'Tangerine', serif;
+    font-size: 55px;
+    text-shadow: 4px 4px 4px rgb(43, 40, 40);
+    margin-bottom: 15px;
+}
+#about-me .row{
+    margin-top: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 8px 8px 10px 15px #222324;
+}
+.fa-caret-right{
+    margin-right: 7px;
+    font-size: 20px;
+}
+.about-col-1{
+    padding-top: 9%;
+    margin-right: 0px;
+}
+.about-col-2{
+    text-align: left;
+}
+.profile-img{
+    width: 50%;
+    border: 3px solid black;
+    /* height: 80%; */
+    /* border-radius: 100%;*/
+}
+/*.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-2{
+    flex-basis: 60%;
+}*/
+
+/*@media (max-width : 1000px){
+    .profile-img{
+
+    }
+}*/
+
+/*---Education---*/
+
+#Education{
+    background-color: black;
+    color:#fff;
+    height:auto;
+    text-align: center;
+    padding: 5% 10%;
+}
+#Education h1{ 
+    font-family: 'Tangerine', serif;
+    font-size: 55px;
+    text-shadow: 3px 3px 3px rgb(219, 214, 214);
+    padding:0 5% 3%;
+}
+#Education h2{
+    padding: 5%;
+}
+.education-box{
+    background-image: linear-gradient(#BDD4E7,#8693AB,#6a7383);
+    color: #000;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 2%;
+    margin: 20px 40px;
+    transition: background 0.5s, transform 0.5s;
+    border-radius: 10px;
+}
+.education-box:hover{
+    background-image: linear-gradient(45deg,rgb(15, 15, 15),rgb(24, 23, 23),rgb(32, 30, 30),rgba(32, 30, 30, 0));
+    color: #fff;
+    background-size: cover;
+    transform: translateY(-10px);
+    border: 4px solid #fff;
+}
+#Education p{
+    font-size: 17px;
+}
+@media (max-width : 750px){
+    .education-box{
+        margin: 7px 0;
+    }
+}
+
+/*---Skills---*/
+
+#Skills {
+    background-image: linear-gradient(#BDD4E7,#97a3b9,#8693AB,#5e6570,#8693AB,#97a3b9,#BDD4E7);
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    padding: 4% 5% 5%;
+}
+#Skills h1{ 
+    font-family: 'Tangerine', serif;
+    text-align: center;
+    font-size: 55px;
+    text-shadow: 4px 4px 4px rgb(43, 40, 40);
+    padding-bottom: 4%;
+}
+#Skills h2{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 35px;
+}
+.programming{
+    margin-left: 90px;
+}
+.Web-Development{
+    margin-left: 90px;
+}
+.comm{
+    margin-left: 70px;
+}
+.programming li{
+    text-align: left;
+    font-size: 20px;
+}
+.Web-Development li{
+    text-align: left;
+    font-size: 20px;
+}
+.skills-image {
+    width: 50%;
+    margin: 5px;
+}
+.fa-star{
+    color: yellow;
+}
+.carousel-inner{
+    background-color: #60646b;
+    box-shadow: 8px 8px 10px 15px #38393a;
+}
+.carousel-item.program{
+    padding: 2%;
+}
+.carousel-item.web-d{
+    padding: 3.35%;
+}
+.carousel-item.communication{
+    padding: 3.7%;
+}
+@media (max-width:730px){
+    #Skills h1{
+        font-size: 45px;
+    }
+    #Skills h2{
+        font-size: 25px;
+    }
+    .programming li,.Web-Development li,.comm{
+        font-size: 15px;
+    }
+    .skills-image{
+        width: 50%;
+    }
+}
+ @media (max-width:484px){
+    .programming{
+        margin-left: 50px;
+    }
+    .Web-Development{
+        margin-left: 50px;
+    }
+    .comm{
+        margin-left: 30px;
+    }
+    .carousel-item.program{
+        padding: 1%;
+    }
+    .carousel-item.web-d{
+        padding: 7%;
+    }
+    .carousel-item.communication{
+        padding: 7.5%;
+    }
+    .skills-image{
+        width: 30%;
+    }
+}
+
+/*---Contact---*/
+
+#Contact{
+    background-color:black;
+    background-size: cover;
+    padding: 2% 3%;
+}
+#Contact h1{ 
+    font-family: 'Tangerine', serif;
+    font-size: 55px;
+    text-shadow: 2px 2px 2px #aaa;
+    color: #fff;
+}
+.contact-us{
+    margin-right: 0px;
+    text-align: left;
+}
+.contact-us h1{
+    padding-bottom: 4%;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.contact-us p{
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+}
+.icon{
+    margin-right: 5px;
+    font-size: 15px;
+}
+.social-icon {
+    margin: 20px 10px;
+    color:rgb(253, 251, 251);
+    transition: transform 0.5s;
+    font-size: 20px;
+}
+.social-icon:hover{
+    transform: translateY(-10px);
+}
+.social-icon.fa-facebook:hover{
+    color: rgb(83, 158, 228);
+}
+.social-icon.fa-instagram:hover{
+    color: rgb(228, 64, 95);
+}
+.social-icon.fa-twitter:hover{
+    color: yellow;
+}
+.social-icon.fa-linkedin:hover{
+    color: blue;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 0;
+    outline: none;
+    background-image: linear-gradient(#696f75,#666d7a,#6f7581,#7d879b,#BDD4E7);
+    font-size: 15px;
+    border-radius: 6px;
+}
+form label{
+    color: #fff;
+}
+::placeholder{
+    color: #000;
+}
+form button{
+    text-align: center;
+    padding: 3% 9%;
+    margin-top: 3px;
+    background-image: linear-gradient(#696f75,#666d7a,#6f7581,#748199,#BDD4E7);
+    color: #000;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 30%;
+    margin: 0 40%;
+}
+form button:hover{
+    background-image: linear-gradient(rgb(26, 23, 23),grey,rgb(26, 23, 23));
+    color: #000;
+}
+
+/*---Footer---*/
+
+#footer {
+    background-color: #fff; 
+    background-image: linear-gradient(#6a7383,#8693AB,#BDD4E7);
+    color: #000;
+    text-align: center;
+    padding: 2% 5%;
+}
+#footer p{
+    font-size: 13px;
+}
+
+/*------------------------------*/
+@media (max-width : 910px){
+    #title h1{
+        font-size: 28px;
+        text-shadow: 2.5px 2px 2px #aaa;
+    }
+    #title p{
+        font-size: 20px;
+    }
+}
+@media (max-width : 400px){
+    #title h1{
+        font-size: 18px;
+        text-shadow: 1px 1px 1px #aaa;
+    }
+    #about-me h1,#Education h1,#Skills h1,#Contact h1{
+        font-size: 28px;
+        text-shadow: 1.5px 1.5px 1.5px #aaa;
+    }
+    #about-me h2,#Education h2,#Skills h2,#Contact h2{
+        font-size: 21px;
+    }
+    #about-me p,#Education p,#Skills p,#Contact p{
+        font-size: 15px;
+    }
+    #title p{
+        font-size: 12px;
+    }
+    #nav{
+        font-size: 15px;
+    }
+    #about-me .profile-img{
+        width: 40%;
+        height: 70%;
+
+    }
+    form button{
+        padding-right: 17%;
+        padding-left: 6%;
+    }
+}
